@@ -417,6 +417,7 @@ class VideoHandler extends FlxSprite
 	}
 	
 
+	#if desktop
 	function get_length():Float {
 		#if desktop
 		return bitmap.length / 1000;
@@ -426,4 +427,11 @@ class VideoHandler extends FlxSprite
 		return netStream.__video.duration;
 		#end
 	}
+        #end
+}
+
+}
+
+}
+
 }
