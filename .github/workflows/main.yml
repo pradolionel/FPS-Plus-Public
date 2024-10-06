@@ -1,7 +1,7 @@
-name: Build Game for Android
+name: build
 on: workflow_dispatch
 jobs:
-  Android:
+  main:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -16,10 +16,9 @@ jobs:
 
       - name: Install Libraries
         run: |
-          haxelib install hmm --quiet
-          haxelib run hmm install --quiet
-          haxelib run lime rebuild hxcpp
-
+          haxelib --global install hmm
+          haxelib --global run hmm setup
+          haxelib --global run lime rebuild hxcpp
       - name: Configure Android
         run: |
           haxelib run lime config ANDROID_SDK $ANDROID_HOME
