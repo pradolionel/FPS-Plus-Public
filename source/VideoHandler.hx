@@ -429,9 +429,3 @@ class VideoHandler extends FlxSprite
 	}
         #end
 }
-
-}
-
-}
-
-}
