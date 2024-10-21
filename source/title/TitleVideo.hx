@@ -1,5 +1,6 @@
 package title;
 
+#if !mobile
 import flixel.FlxG;
 import flixel.FlxState;
 import flixel.util.FlxColor;
@@ -60,3 +61,4 @@ class TitleVideo extends FlxState
 	}
 	
 }
+#end
