@@ -1,5 +1,6 @@
 package cutscenes.data;
 
+#if !mobile
 import flixel.math.FlxPoint;
 import flixel.sound.FlxSound;
 import flixel.FlxSprite;
@@ -131,5 +132,5 @@ class DarnellIntro extends ScriptedCutscene
         gf.playAnim('laughCutscene', true);
         FlxG.sound.play(Paths.sound("weekend1/cutscene/nene_laugh"));
     }
-
 }
+#end
