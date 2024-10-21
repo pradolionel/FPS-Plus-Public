@@ -1,5 +1,6 @@
 package cutscenes.data;
 
+#if !mobile
 import flixel.math.FlxMath;
 import transition.data.InstantTransition;
 import flixel.math.FlxPoint;
@@ -92,3 +93,4 @@ class VideoCutscene extends ScriptedCutscene
     }
 
 }
+#end
