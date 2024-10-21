@@ -1,5 +1,6 @@
 package cutscenes.data;
 
+#if !mobile
 import flixel.math.FlxPoint;
 import flixel.sound.FlxSound;
 import flixel.FlxSprite;
@@ -60,3 +61,4 @@ class DarnellVideo extends ScriptedCutscene
     }
 
 }
+#end
